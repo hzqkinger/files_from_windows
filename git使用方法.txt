@@ -1,0 +1,5 @@
+一、首先在web端创建一个仓库
+二、git clone url
+三、git add XXX
+四、git commit -m "xxx"
+五、git push
