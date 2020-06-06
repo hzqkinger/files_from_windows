@@ -1,0 +1,21 @@
+=== 建立一个能提交代码到远程库中的方法一 ===========
+git clone <url>		将远程库克隆到本地
+
+=== 建立一个能提交代码到远程库中的方法二 ===========
+git init	本地初始化git目录
+git pull <url> <name> --allow-unrelated-histories	拉取远程仓库内容到本地
+git remote add <name> <url>	添加远程仓库
+git push --set-upstream master master	将本地仓库与远程仓库关联
+git push <name>	将本地仓库内容提交到远程仓库
+
+=== 使用方法 ======================================
+git add ./*
+git commit -m "xxx"
+git push
+
+git reflog
+git reset --soft "abcd"		不删除工作空间改动代码，撤销commit，不撤销git add . 
+git reset --hard "abcd"		删除工作空间改动代码，撤销commit，撤销git add . 
+git commit --amend		默认进入vim编辑。修改commit的注释
+git branch		显示所有本地分支
+
